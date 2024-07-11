@@ -6,6 +6,46 @@
     <title>XM Reporting Email Generator</title>
 </head>
 <body>
+    <h1>HLA Email Generator</h1>
+    <form action="">
+        <label for="donor">Donor:
+            <input type="text" id="donor" name="donor">
+        </label>
+        <label for="organ">Organ:
+            <label for="heart">
+                <input type="radio" id="heart" value="heart" name="organ">
+                Heart
+            </label>
+            <label for="lung">
+                <input type="radio" id="lung" value="lung" name="organ">
+                Lung
+            </label>
+            <label for="kidney">
+                <input type="radio" id="kidney" value="kidney" name="organ">
+                Kidney
+            </label>
+            <label for="liver">
+                <input type="radio" id="liver" value="liver" name="organ">
+                Liver
+            </label>
+        </label>
+        <label for="recipient">
+            Recipient:
+            <input type="text" id="recipient" name="recipient">
+        </label>
+        <label for="sequence">
+            Sequence Number:
+            <input type="number" id="sequence" name="sequence">
+        </label>
+        <label for="tcell">
+            T-cell negative?
+            <input type="checkbox" id="tcell" name="tcell">
+        </label>
+        <label for="bcell">
+            B-cell negative?
+            <input type="checkbox" id="bcell" name="bcell">
+        </label>
+    </form>
     <script src="bundle.js"></script>
 </body>
 </html>
